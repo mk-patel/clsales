@@ -1,0 +1,17 @@
+.container{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.row a{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.row h1{
+    font-size: 25px;
+    color: darkblue;
+}
+.row h2{
+    font-size: 20px;
+    color: black;
+}
