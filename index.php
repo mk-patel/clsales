@@ -87,7 +87,10 @@ $result6 = mysqli_query($conn, $query6);
                             Gauranteed | Quality Checked | Home Delivery
                         </div>
                         <div class="qc">
-                        समानों की गुणवत्ता और गारंटी की जानकारी के लिए कॉल या मेसेज करें - 7999106801
+                            booking और Order के लिए कॉल या मेसेज करे - Whatsapp No. 7999106801
+                        </div>
+                        <div class="qc">
+                            समानों की गुणवत्ता और गारंटी की जानकारी के लिए कॉल या मेसेज करें - 7999106801
                         </div>
                     </div>
             </div>
@@ -147,7 +150,7 @@ $result6 = mysqli_query($conn, $query6);
         <br/>
         <div class="bottom">
             <div class="btm-elm">
-                <a href="feedback.php">Suggessions & Feedback</a> | <a href="about.html">About</a>
+                <a href="feedback.php"><u>Suggessions & Feedback</u></a> | <a href="about.html"><u>About</u></a>
             </div>
             <div class="last-line">
                 All the concepts, ideas, way of presentation, contents & images are written & developed by Chhatrapal Patel.<br/>
