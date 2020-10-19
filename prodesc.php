@@ -106,25 +106,13 @@ $row = mysqli_fetch_assoc($result);
     </head>
     <body style="background:;">
         <header class="d-flex justify-content-between bg-primary">
-			<div class="header-title">
-				CL Sales&nbsp;
-			</div>
-			<div class="header-pg-title">
-				<b style="color:black;"> Product Description</b>
-			</div>
-			<div class="header-content">
-				<button id="category" type="button" class="btn bg-primary" data-toggle="dropdown">Menu</button>
-				<ul class="dropdown-menu">         
-					<li><a class="dropdown-item" href="projects.php">Projects</a></li>
-					<li class="divider"></li>
-					<li><a class="dropdown-item" href="applications.php">Application</a></li>
-					<li class="divider"></li>
-					<li><a class="dropdown-item" href="aiarea.php">AI Area</a></li>
-					<li class="divider"></li>
-					<li><a class="dropdown-item" href="feedback.php">Feedback</a></li>
-				</ul>
-			</div>
-		</header>
+		<div class="header-title">
+			<b>CL Sales&nbsp;</b>
+		</div>
+		<div class="header-pg-title">
+			<b style="color:white;margin-right:10px;"> Product Description</b>
+		</div>	
+	</header>
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
