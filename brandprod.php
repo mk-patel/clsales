@@ -110,7 +110,7 @@ $result5 = mysqli_query($conn, $query);
         </div>
         <div class="bottom">
             <div class="btm-elm">
-                <a href="feedback.php">Suggessions & Feedback</a> | <a href="about.html">About</a>
+                <a href="feedback.php"><u>Suggessions & Feedback</u></a> | <a href="about.html"><u>About</u></a>
             </div>
             <div class="last-line">
                 All the concepts, ideas, way of presentation, contents & images are written & developed by Chhatrapal Patel.<br/>
