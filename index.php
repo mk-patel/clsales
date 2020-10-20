@@ -82,12 +82,12 @@ $result6 = mysqli_query($conn, $query6);
             <br/>
             <div class="row">
                     <div class="services">
-                        <h3>Services From Clsales</h3>
+                        <h3>Services From CL Sales</h3>
                         <div class="qc">
                             Gauranteed | Quality Checked | Home Delivery
                         </div>
                         <div class="qc">
-                            booking और Order के लिए कॉल या मेसेज करे - Whatsapp No. 7999106801
+                            Booking और Order के लिए कॉल या मेसेज करे - Whatsapp No. 7999106801
                         </div>
                         <div class="qc">
                             समानों की गुणवत्ता और गारंटी की जानकारी के लिए कॉल या मेसेज करें - 7999106801
