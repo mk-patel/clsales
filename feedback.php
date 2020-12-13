@@ -15,71 +15,69 @@
         <link href="https://fonts.googleapis.com/css?family=Oxanium|Work+Sans&display=swap" rel="stylesheet">
     <style>
 body{
-background:white;
-font-family: 'Work Sans', sans-serif;
-}
-header{
-width:100%;
-height:40px;
-background:grey;
-}
-.header-img{
-float:left;
-margin-left:10px;
-width:120px;
-height:40px;
-line-height:40px;
-font-size:15px;
-font-weight:700;
-color:white;
-}
-.header-img img{
-width:40px;
-height:40px;
-border:1px solid white;
-border-radius:50%;
-}
-.header-content{
-float:right;
-margin-right:10px;
-width:110px;
-height:40px;
-}
-.header-content img{
-width:40px;
-height:40px;
-border:1px solid white;
-border-radius:50%;
-}
-#category{
-margin-top:5px;
-}
-.dropdown-item{
-color:darkorange;
-font-size:13px;
-font-weight:700;
-}
-.row{
-margin-top:10px;
-}
-.btn{
-font-size:12px;
-font-weight:700;
-padding:5px;
-}
-
-
+			background:white;
+			font-family: 'Work Sans', sans-serif;
+		}
+		
+		header{
+			width:100%;
+			height:auto;
+			padding:6px 6px 10px 0px;
+			background:#030057;
+		}
+		.header-title{
+			font-size:17px;
+			color:darkorange;
+			margin-left:10px;
+			padding:8px 0px 2px 0px;
+		}
+		.after_header{
+			width:100%;
+			height:auto;
+			padding:10px;
+			color : white;
+			background:#01153b;
+		}
+		.header-pg-title{
+			font-size:16px;
+			margin-top:8px;
+		}
+		.bottom{
+			width:100%;
+			height:auto;
+			background:#030057;
+		}
+		.btm-elm{
+			font-size:15px;
+			padding:5px;
+			margin-left:10px;
+		}
+		.btm-elm a{
+			text-decoration:none;
+			color:white;
+			font-weight:700;
+		}
+		.last-line{
+			font-size:11px;
+			color:white;
+			padding:5px;
+			margin-left:10px;
+		}	
+		
 </style>
 </head>
     <body>
-        <header class="d-flex justify-content-between bg-primary">
+        <header class="d-flex justify-content-between">
 			<div class="header-title">
-				<b>CL Sales&nbsp;</b>
+				<b> <img src="images/logo.png" color="white" width="40px" height="20px"> &nbsp;CL Sales</b>
 			</div>
 			<div class="header-pg-title">
-				<b style="color:white;margin-right:10px;"> Sales & Services</b>
+				<b style="color:white;margin-right:10px;"><img src="images/loc.png" color="white" width="15px" height="20px"> &nbsp;Deorbija</b>
 			</div>
 		</header>
+		<div class="after_header">
+		Gauranteed | Quality Checked | Home Delivery 
+		</div>
         <div class="container">
             <div class="row">
 Suggessions & Feedback
