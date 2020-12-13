@@ -28,86 +28,343 @@ $result6 = mysqli_query($conn, $query6);
 		<meta property="og:description" content="This is Clsales website demonstratingand the products.">
 		<meta name="keywords" content="clsales">
 		<meta name="author" content="Manish Patel">
-        <link rel="stylesheet" type="text/css" href="header.css"/>
-        <link rel="stylesheet" type="text/css" href="./index.css"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Oxanium|Work+Sans&display=swap" rel="stylesheet">
+		<style>
+		
+		body{
+			background:white;
+			font-family: 'Work Sans', sans-serif;
+		}
+		
+		header{
+			width:100%;
+			height:auto;
+			padding:6px 6px 10px 0px;
+			background:#030057;
+		}
+		.header-title{
+			font-size:17px;
+			color:darkorange;
+			margin-left:10px;
+			padding:8px 0px 2px 0px;
+		}
+		.after_header{
+			width:100%;
+			height:auto;
+			padding:10px;
+			color : white;
+			background:#01153b;
+		}
+		.header-pg-title{
+			font-size:16px;
+			margin-top:8px;
+		}
+		.bottom{
+			width:100%;
+			height:auto;
+			background:#030057;
+		}
+		.btm-elm{
+			font-size:15px;
+			padding:5px;
+			margin-left:10px;
+		}
+		.btm-elm a{
+			text-decoration:none;
+			color:white;
+			font-weight:700;
+		}
+		.last-line{
+			font-size:11px;
+			color:white;
+			padding:5px;
+			margin-left:10px;
+		}	
+		
+		
+		
+
+		.brand-style{
+			 background-image:linear-gradient(to bottom,  #d1edff ,white);
+		}
+		.brands{
+			color: #01153b;
+			font-size: 23px;
+			font-weight: 700;
+			padding:20px 0px 0px 10px;
+		}
+		.cont-first-left{
+			float: left;
+			padding: 15px;
+			width: 50%;
+			height: auto;
+		}
+		.cont-first-left img{
+			width: 200px;
+			height: 200px;
+		}
+		.cont-sec-right{
+			float: right;
+			padding: 15px;
+			width: 50%;
+			height: auto;
+		}
+		.cont-sec-right img{
+			width: 200px;
+			height: 200px;
+		}
+		
+		
+		
+		
+		
+		.services{
+			
+			background-image:linear-gradient(to bottom,white, #f5abf4 );
+		}
+		.services h3{
+			font-size: 23px;
+			color: #01153b;
+			font-weight: 700;
+			padding:30px 0px 0px 10px;
+		}
+		.qc{
+			width: auto;
+			background-color:#030057;
+			border-radius: 3px;
+			padding: 7px;
+			color: white;
+			font-size: 17px;
+		}
+		
+		
+		
+		
+		
+		
+		
+		.thumbnail{
+			border: 2px solid #ebfbff;
+			border-radius: 5px;
+			margin-top: 20px;
+			background:#ebfbff;
+			box-shadow:2px 2px 10px 1px rgba(0,0,0,0.2);
+		}
+		.thumbnail img{
+			width: 100%;
+		}
+
+		.caption {
+			color:black;
+			text-decoration: none;
+			padding: 10px;
+		}
+		.info-prod{
+			font-weight: 700;
+			color: black;
+		}
+		.row{
+			margin-top:10px;
+			margin-left:20px;
+			margin-right:20px;
+		}
+
+		@media screen and (max-width:1000px){
+			
+			.brand-img img{
+				width: 200px;
+				height: auto;
+			}
+			.cont-first-left img{
+				width: 180px;
+				height: 180px;
+			}
+			.cont-sec-right img{
+				width: 180px;
+				height: 180px;
+			}
+			.cont-first-left{
+				float: left;
+				padding: 15px;
+				width: 98%;
+				height: auto;
+				text-align: center;
+				margin-top: 15px;
+			}
+			.cont-sec-right{
+				float: left;
+				padding: 15px;
+				width: 98%;
+				height: auto;
+				text-align: center;
+				margin-top: 15px;
+			}
+		}
+		@media screen and (max-width:700px){
+			
+			
+			.brand-img img{
+				width: 200px;
+				height: auto;
+			}
+			.cont-first-left{
+				float: left;
+				padding: 15px;
+				width: 97%;
+				height: auto;
+				margin-top: 15px;
+			}
+			.cont-sec-right{
+				float: left;
+				padding: 15px;
+				width: 97%;
+				height: auto;
+				margin-top: 15px;
+			}
+			.cont-first-left img{
+				width: 150px;
+				height: 150px;
+			}
+			.cont-sec-right img{
+				width: 150px;
+				height: 150px;
+			}
+			.thumbnail{
+				text-align: center;
+				margin-left: 20px;
+				margin-right: 20px;
+			}    
+			.thumbnail img{
+				text-align: center;
+				width:100%;
+				height: auto;
+			}
+			.caption{
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+		}
+		@media screen and (max-width:575px){
+			
+			.brands{
+				margin-top: 00px;
+			}
+			.cont-first-left{
+				float: left;
+				padding: 15px;
+				width: 50%;
+				height: auto;
+				margin-top:0px;
+			}
+			.cont-sec-right{
+				float: right;
+				padding: 15px;
+				width: 50%;
+				height: auto;
+				margin-top:0px;
+			}
+			.cont-first-left img{
+				width: 150px;
+				height: 150px;
+			}
+			.cont-sec-right img{
+				width: 150px;
+				height: 150px;
+			}
+		}
+		</style>
     </head>
     <body>
-        <header class="d-flex justify-content-between bg-primary">
+        <header class="d-flex justify-content-between">
 			<div class="header-title">
-				<b>CL Sales&nbsp;</b>
+				<b> <img src="images/logo.png" color="white" width="40px" height="20px"> &nbsp;CL Sales</b>
 			</div>
 			<div class="header-pg-title">
-				<b style="color:white;margin-right:10px;"> Sales & Services</b>
+				<b style="color:white;margin-right:10px;"><img src="images/loc.png" color="white" width="15px" height="20px"> &nbsp;Deorbija</b>
 			</div>
 		</header>
-        <div class="container">
-            <div class="row">
-                <img class="img-fluid ban" src="images/ban1.jpg" alt="Refresh to view the image">
-            </div>
-            <div class="row">
-                <img class="img-fluid mobban" src="images/mobban1.jpg" alt="Refresh to view the image">
-            </div>
+		<div class="after_header">
+		Gauranteed | Quality Checked | Home Delivery 
+		</div>
+			
+		<div class="brand-style">
             <div class="brands">
                 <p>Big Brands</p>
             </div>
+			
             <div class="row">
                 <div class="col-sm-6">
                     <a href="brandprod.php?brand=<?php echo $row["brandname"]; ?>">
+					<?php
+						if(!empty($row['brandname'])){
+						?>
                         <div class="cont-first-left">
                             <img src="<?php echo $row["brandimg"]; ?>" alt="brand image"/>
                         </div>
+						<?php
+						}
+						?>
                     </a>
-                    <a href="brandprod.php?brand=<?php echo $row2["brandname"]; ?>">
-                        <div class="cont-sec-right">
+                    <a href="brandprod.php?brand=<?php echo $row2["brandname"];?>">
+						<?php
+						if(!empty($row2['brandname'])){
+						?>
+						<div class="cont-sec-right">
                             <img src="<?php echo $row2["brandimg"]; ?>" alt="brand image"/>
                         </div>
+						<?php
+						}
+						?>
                     </a>
                 </div>
                 <div class="col-sm-6">
                     <a href="brandprod.php?brand=<?php echo $row3["brandname"]; ?>">
+						<?php
+						if(!empty($row3['brandname'])){
+						?>
                         <div class="cont-first-left">
                             <img src="<?php echo $row3["brandimg"]; ?>" alt="brand image"/>
                         </div>
+						<?php
+						}
+						?>
                     </a>
                     <a href="brandprod.php?brand=<?php echo $row4["brandname"]; ?>">
-                        <div class="cont-sec-right">
+                        <?php
+						if(!empty($row4['brandname'])){
+						?>
+						<div class="cont-sec-right">
                             <img src="<?php echo $row4["brandimg"]; ?>" alt="brand image"/>
                         </div>
+						<?php
+						}
+						?>
                     </a>
                 </div>
             </div>
-            <br/>
-            <br/>
-            <div class="row">
-                    <div class="services">
-                        <h3>Services From CL Sales</h3>
-                        <div class="qc">
-                            Gauranteed | Quality Checked | Home Delivery
-                        </div>
-                        <div class="qc">
-                            Booking और Order के लिए कॉल या मेसेज करे - Whatsapp No. 7999106801
-                        </div>
-                        <div class="qc">
-                            समानों की गुणवत्ता और गारंटी की जानकारी के लिए कॉल या मेसेज करें - 7999106801
-                        </div>
-                    </div>
-            </div>
-            <div class="features">
-                <p>Free Home Delivery</p>
-            </div>
+			</div>
+			
+			
+			<br/>
+
             <div class="row">
                 <?php
                 while($row5 = mysqli_fetch_assoc($result5))
                 {
+					if(!empty($row5['prodname'])){
+						
                 ?>
                 <div class="col-md-3">
                     <div class="thumbnail">
                         <a href="prodesc.php?eid=<?php echo $row5['placeid'];?>">
+						<div class="caption">
+						
+						<p class="info-prod"><?php echo $row5['prodname'];?></p>
+						</div>
+						
                             <img src="<?php echo $row5['prodimg'];?>" alt="Product Image">
                             <div class="caption">
-                            <p class="info-prod"><?php echo $row5['prodname'];?></p>
                                 <p>Rs. <del><?php echo $row5['actrate'];?> /-</del> | <mark>&nbsp;<?php echo $row5['discount'];?> %&nbsp;</mark><br/>
                                     <b>Rs. <?php echo $row5['effrate'];?> /- </b> Only<br/>
                                 </p>
@@ -116,17 +373,15 @@ $result6 = mysqli_query($conn, $query6);
                     </div>
                 </div>
                 <?php
-                }
+                }}
                 ?>
             </div>
-            <hr/>
-            <div class="features">
-                <p>Free Home Delivery</p>
-            </div>
+			<br/>
             <div class="row">
                 <?php
                 while($row6 = mysqli_fetch_assoc($result6))
                 {
+					if(!empty($row6['prodname'])){
                 ?>
                 <div class="col-md-3">
                     <div class="thumbnail">
@@ -142,10 +397,10 @@ $result6 = mysqli_query($conn, $query6);
                     </div>
                 </div>
                 <?php
-                }
+                }}
                 ?>
             </div>
-        </div>
+
         <br/>
         <br/>
         <div class="bottom">
@@ -154,7 +409,7 @@ $result6 = mysqli_query($conn, $query6);
             </div>
             <div class="last-line">
                 All the concepts, ideas, way of presentation, contents & images are written & developed by Chhatrapal Patel.<br/>
-                Version - 1.0.0 | Developer - Manish Patel
+                Version - 1.1.2 | Developer - Manish Patel
             </div>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
